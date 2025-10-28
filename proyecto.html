@@ -7,31 +7,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
 
-    <!-- Barra de navegacion-->
+     <!-- Barra de navegacion-->
     <nav class="navbar navbar-dark bg-dark navbar-expand-md">
-        <div class="container-fluid">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+        <div class="container-fluid ">
+          <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="img/icono1.png" alt="Bootstrap" width="30" height="30">
+                Logo marca
+              </a>
+          </div>
+            <ul class="navbar-nav ml-auto mx-3">
+                <li class="nav-item mx-3">
                     <a class="nav-link active" href="#">Inicio</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mx-3">
                     <a class="nav-link" href="#">Servicios</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Acerca de</a>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="#">Acerca</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mx-3">
                     <a class="nav-link" href="#">Contacto</a>
                 </li>
                 
             </ul>                
         </div>
     </nav>
+
     
     <!-- Carrouseles -->
     <!-- <div class="container mt-4"> -->
@@ -39,59 +46,58 @@
             <div class="col-md-6">
 
                 <!-- Primer carrousel -->
-                <div id="carousel1" class="carousel slide">
+                <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
 
                     <div class="carousel-indicators">
-                        <button type="button" data-target="#carousel1" data-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-target="#carousel1" data-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-target="#carousel1" data-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
 
 
                     <div class="carousel-inner">
 
                         <div class="carousel-item active">
-                            <img src="img/carrousel800x450.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block text-dark">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
+                            <img src="img/portada.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block text-danger">
+                                <h5>Izquierda</h5>
+                                <p>Ofertas</p>
                             </div>
                         </div>
 
                         <div class="carousel-item">
-                            <img src="img/carrousel800x450.png" class="d-block w-100" alt="...">
+                            <img src="img/portada2.png" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block bg-dark">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
+                                <h5>Segunda izq</h5>
+                                <p>Ofertas</p>
                             </div>
                         </div>
 
                         <div class="carousel-item">
-                            <img src="img/carrousel800x450.png" class="d-block w-100" alt="...">
+                            <img src="img/portada3.png" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block text-dark">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
+                                <h5>Tercera izq</h5>
+                                <p>Ofertas</p>
                             </div>
                         </div>
 
                     </div>
 
-                    <button class="carousel-control-prev bg-transparent border-0" type="button" data-target="#carousel1" data-slide="prev">
+                    <!-- Controles
+                    <button class="carousel-control-prev bg-transparent border-0" type="button" data-target="#carousel2" data-slide="prev">
                     <span aria-hidden="true" style="font-size: 5rem; color: rgb(69, 0, 0);">‹‹‹</span>
-                    <!-- <span class="visually-hidden">Previous</span> -->
+                    <!-- <span class="visually-hidden">Previous</span> -/->
                     </button>
 
-                    <button class="carousel-control-next bg-transparent border-0" type="button" data-target="#carousel1" data-slide="next">
+                    <button class="carousel-control-next bg-transparent border-0" type="button" data-target="#carousel2" data-slide="next">
                     <span aria-hidden="true" style="font-size: 5rem; color: rgb(69, 0, 0);">›››</span>
-                    <!-- <span class="visually-hidden">Next</span> -->
+                    <!-- <span class="visually-hidden">Next</span> -/->
                     </button>
+                    -->
                 
                 </div>
 
-            </div>
-        
-        
-
+            </div>      
         
             <div class="col-md-6">
 
@@ -108,7 +114,7 @@
                     <div class="carousel-inner">
 
                         <div class="carousel-item active">
-                            <img src="img/carrousel800x450.png" class="d-block w-100" alt="...">
+                            <img src="img/portada2.png" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block text-dark">
                                 <h5>First slide label</h5>
                                 <p>Some representative placeholder content for the first slide.</p>
@@ -116,7 +122,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <img src="img/carrousel800x450.png" class="d-block w-100" alt="...">
+                            <img src="img/portada3.png" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block bg-dark">
                                 <h5>Second slide label</h5>
                                 <p>Some representative placeholder content for the second slide.</p>
@@ -124,7 +130,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <img src="img/carrousel800x450.png" class="d-block w-100" alt="...">
+                            <img src="img/portada4.png" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block text-dark">
                                 <h5>Third slide label</h5>
                                 <p>Some representative placeholder content for the third slide.</p>
@@ -133,15 +139,17 @@
 
                     </div>
 
+                    <!-- Controles
                     <button class="carousel-control-prev bg-transparent border-0" type="button" data-target="#carousel2" data-slide="prev">
                     <span aria-hidden="true" style="font-size: 5rem; color: rgb(69, 0, 0);">‹‹‹</span>
-                    <!-- <span class="visually-hidden">Previous</span> -->
+                    <!-- <span class="visually-hidden">Previous</span> -/->
                     </button>
 
                     <button class="carousel-control-next bg-transparent border-0" type="button" data-target="#carousel2" data-slide="next">
                     <span aria-hidden="true" style="font-size: 5rem; color: rgb(69, 0, 0);">›››</span>
-                    <!-- <span class="visually-hidden">Next</span> -->
+                    <!-- <span class="visually-hidden">Next</span> -/->
                     </button>
+                    -->
                 
                 </div>
 
@@ -152,88 +160,154 @@
     <!-- </div> -->
 
     <!-- Categorias-->
-    <div class="container-fluid text-center my-5 mx-0">
-        <div class="row">
-            <div class="col-md-4">
-                <img src="img/categoria500x250.png" alt="Aqui va la imagen">
-            </div>
 
-            <div class="col-md-4">
-                <img src="img/categoria500x250.png" alt="Aqui va la imagen">
+    <main>
+        <main>
+            <section class="quienes">
+               <div class="contenedor">
+                   <h3 class="quienes-titulo">Increibles Ofertas!!</h3>
+                   <p class="quienes-parrafo"> Nuevos items en nuestra coleccion</p>
+                </div> 
+            </section>
+    </main>
+    
+    <section class="quehacemos">
+        <div class="contenedor">
+            <div class="contenido-cajas">
+                <div class="tarjeta">
+                    <img src="img/icono4.png" alt="" class="imagen-tarjeta">
+                    <div class="contenido-tarjeta">
+                        <h3 class="titulo-tarjeta">Mujeres</h3>
+                        <p class="parrafo-tarjeta">Categoria</p>
+                    </div>
+                </div>
+                <div class="tarjeta">
+                        <img src="img/icono4.png" alt="" class="imagen-tarjeta">
+                        <div class="contenido-tarjeta">
+                            <h3 class="titulo-tarjeta">Hombres</h3>
+                            <p class="parrafo-tarjeta">Categoria</p>
+                        </div>
+                </div>
+                 <div class="tarjeta">
+                        <img src="img/icono4.png" alt="" class="imagen-tarjeta">
+                        <div class="contenido-tarjeta">
+                            <h3 class="titulo-tarjeta">Accesorios</h3>
+                            <p class="parrafo-tarjeta">Categoria</p>
+                        </div>
+                </div>
             </div>
-
-            <div class="col-md-4">
-                <img src="img/categoria500x250.png" alt="Aqui va la imagen">
-            </div>
-
         </div>
-
-    </div>
-
+    </section>
 
     <!-- Productos-->
 
     <div class="container my-3">
+        <div class="portafolio-textos">
+            <h2>NUEVA COLECCION DE TEMPORADA</h2>
+            <p>Especial para recibir el invierno</p>
+        </div>
         <div class="row">
             <div class="col-md-3">
-                <img src="img/producto 250 x 400.png" alt="Aqui va la imagen">
+                <img src="img/7.png" alt="Aqui va la imagen">
             </div>
 
             <div class="col-md-3">
-                <img src="img/producto 250 x 400.png" alt="Aqui va la imagen">
+                <img src="img/7.png" alt="Aqui va la imagen">
             </div>
             
             <div class="col-md-3">
-                <img src="img/producto 250 x 400.png" alt="Aqui va la imagen">
+                <img src="img/7.png" alt="Aqui va la imagen">
             </div>
 
             <div class="col-md-3">
-                <img src="img/producto 250 x 400.png" alt="Aqui va la imagen">
+                <img src="img/7.png" alt="Aqui va la imagen">
             </div>
 
         </div>
+        <div class="row mt-5">
+            <div class="col-md-3">
+                <img src="img/7.png" alt="Aqui va la imagen">
+            </div>
 
+            <div class="col-md-3">
+                <img src="img/7.png" alt="Aqui va la imagen">
+            </div>
+            
+            <div class="col-md-3">
+                <img src="img/7.png" alt="Aqui va la imagen">
+            </div>
+
+            <div class="col-md-3">
+                <img src="img/7.png" alt="Aqui va la imagen">
+            </div>
+
+        </div>
     </div>
 
 
     <!-- Footer-->
      <footer>
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Accordion Item #1
-                </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>This is the first item’s accordion body.</strong> 
-                </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Sucursales
+                            </button>
+                        </h2>
+
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Sucursales varias</strong> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Ayuda
+                        </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Soporte y guias de compra</strong>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Contacto
+                        </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Informacion de contacto</strong> 
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Accordion Item #2
-                </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>This is the second item’s accordion body.</strong>
-                </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Accordion Item #3
-                </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>This is the third item’s accordion body.</strong> 
-                </div>
-                </div>
+
+            <div class="col-md-6">
+                <section class="contacto">
+                    <div class="contenedor">
+                        <div class="footer-textos">
+                            <h2>Suscribete a nuestro newsletter</h2>
+                            <p>Recibe ofertas y noticias</p>
+                        </div>
+                        <form action="" class="formulario" method="POST">
+                            <input type="text" placeholder="Nombre" id="nombre" name="nombre" required value="">
+                            <input type="email" placeholder="Correo" id="correo" name="correo" required value="" class="email">
+                            <textarea name="mensaje" id="mensaje" placeholder="Mensaje:"></textarea>
+                        <div class="derecha">
+                            <input class="boton derecha" type="submit" value="Contactar" name="submmit">
+                            </div>
+                        </form>
+                    </div>
+                </section>
             </div>
         </div>
      </footer>
